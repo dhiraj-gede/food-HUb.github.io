@@ -173,7 +173,7 @@ a{
 #Card-section{
   text-align: center;
   background-color:var(--main-red);
-  padding-top:7%;
+  padding: 10rem 2rem;
 }
 .Card-section-heading{
   color: #fff;
@@ -182,24 +182,66 @@ a{
   font-size:5.5rem;
 }
 .Three-cards{
-  width: 20%;
+ 
   height:100%;
   display: inline-block;
-  padding: 7% 3% 2%;
+  padding:7% 3% 2% 0%;
   border: solid #000 3px;
   border-radius: 20px;
   margin: 7% 1%;
-  background-color: #F7F7F7;
+  margin: 7% 1%;
+  background-color: #F7F7F7;   
 }
 .Card-image{
   width: 200px;
   height: 240px;
 }
-.Card-image.Delivery-man{
+.Card-image .Delivery-man{
   width: 270px;
   height: 200px;
   margin-top: 40px;
 }
+
+
+@media only screen and (max-width: 600px) {
+  .Three-cards{ 
+    
+    display: grid;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .Three-cards{ 
+    
+    
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .Three-cards{ 
+    width: 50%;
+
+  }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .Three-cards{ 
+   
+  }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .Three-cards{ 
+    width: 26%;
+  }
+}
+
+
+
 .Card-heading{
   font-size: 3rem;
   font-weight: 700;
@@ -209,6 +251,7 @@ a{
 .Card-note{
   color:#000;
 }
+
 
 
 
